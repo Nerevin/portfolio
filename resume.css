@@ -1,0 +1,128 @@
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0 auto;
+  width: 1024px;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: #f2f2f2;
+}
+
+.contactList ul {
+  list-style-type: none;
+}
+
+div {
+  text-align: center;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 100px;
+}
+
+.contactList {
+  text-align: center;
+}
+
+.contactList li {
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+  border: 1px dotted black;
+  border-radius: 5px;
+}
+
+.education-content_visible {
+  visibility: visible;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.education-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-width: 1px 0;
+  border-color: black;
+  border-style: solid;
+  cursor: pointer;
+}
+.education-button:hover {
+  box-shadow: inset 0 0 5px 5px black;
+  transition: all 0.5s;
+}
+.education-button h2 {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.education__arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.education__arrow_rotate {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+
+.project__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__button {
+  height: 50px;
+}
+.project__button_left {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+.project__button_right {
+  width: 20px;
+  height: 20px;
+  transform: rotate(270deg);
+}
+
+.project__pic {
+  width: 640px;
+  height: 320px;
+}
+
+.project__content {
+  display: flex;
+  justify-content: space-between;
+}
+.project__content p, .project__content ul {
+  display: inline-block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.project-hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=resume.css.map */

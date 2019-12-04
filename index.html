@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+        <link rel="stylesheet" href="resume.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img class="photo" src="assets/photo.jpg" alt="Photo" width="150px" height="150px" />
+                <h1>Ilia Kazakov</h1>
+            </div>
+            <nav>
+                <ul class="contactList">
+                    <li><a href="#contactInfo">Contact Info</a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="contactInfo">
+                <h2>Contact Info:</h2>
+                <ul>
+                    <li><b>Phone number:</b> 89379901127</li>
+                    <li><b>Email:</b> kazak.redalerd@gmail.com</li>
+                    <li><b>Discord:</b> Nerevin#8529</li>
+                    <li><b>GitHub:</b> <a href="https://github.com/Nerevin">GitHub</a></li>
+                    <li><a href="https://vk.com/cossack93">VK</a></li>
+                </ul>
+            </article>
+            <article id="aboutMe">
+                <h2>About me:</h2>
+                <blockquote> My goal is to change my profession, now I work as a design engineer at a large enterprise, but there are few opportunities for self-realization.   
+                    I believe that work in the IT sector allows you to monitor new technologies and constantly develop. I believe that I have a good self-learning skill,  
+                    I take responsibility for tasks and always try to get to the bottom of the matter, and I also love computers from an early age. </blockquote>
+            </article>
+            <article id="skills">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>HTML, CSS base</li>
+                    <li>Java(beginner)</li>
+                    <li>SQL</li>
+                    <li>GIT</li>
+                </ul>
+                <details>
+                    <summary>Code example</summary>
+                    <code>
+                    import javax.swing.*;<br>
+                    import java.awt.*;<br>
+                    import java.awt.event.*;<br><br>
+
+                    public class Grafon {<br>
+                    static String a;<br>
+                    JLabel text = new JLabel("Здесь будет умная надпись", SwingConstants.CENTER);<br>
+                    public void mainFrame(){<br>
+                    JFrame frame = new JFrame("Мудрости каждый день");<br>
+                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+                    JButton tip = new JButton("Получить совет");<br>
+                    tip.addActionListener(new Tip());<br>
+                    JButton kama = new JButton("Спросить Каму");<br>
+                    kama.addActionListener(new Kama());<br><br>
+
+                    frame.getContentPane().add(BorderLayout.SOUTH, tip);<br>
+                    frame.getContentPane().add(BorderLayout.NORTH, kama);<br>
+                    frame.getContentPane().add(BorderLayout.CENTER, text);<br>
+                    frame.setSize(400, 200);<br>
+                    frame.setVisible(true);<br>
+                    }<br>
+                    class Tip implements ActionListener {<br>
+                    public void actionPerformed(ActionEvent e) {<br>
+                    FileRead.tipReader();<br>
+                    text.setText(a);<br>
+                    }<br>
+                }   <br>
+                    class Kama implements ActionListener {<br>
+                    public void actionPerformed(ActionEvent e) {<br>
+                    FileRead.kamaReader();<br>
+                    text.setText(a);<br>
+                    }<br>
+                }<br>
+            }
+                    </code>
+                </details>
+            </article>
+            <article id="experience">
+                <h2>Experience:</h2>
+                <ul>
+                    <li><a href="https://www.codecademy.com/profiles/Nerevin">CodeAcademy profile</a></li>
+                    <li><a href="https://github.com/Nerevin/tipoftheday">Small project on java</a></li>
+                    <li>Many book HeadFirst for programmer</li>
+                </ul>
+            </article>
+            <article class="education">
+                <div id="education-but" class="education-button">
+                    <h2>Education</h2>
+                    <img src="icon/chevron-down-solid.svg" alt="arrow" id="arrow" class="education__arrow" >
+                </div>
+                <ul id="education-content" class="hidden-content education-content_visible">
+                    <li>School 2001 - 2012</li>
+                    <li>Samara State Aerospace University in 2016 faculty of Electronics and Instrument Engineering. 2012 - 2016</li>
+                    <li>RSSchool Courses 2019 - 2020</li>
+                </ul>
+                <article class="project">
+                    <h2>Projects</h2>
+                        <div class="project__main">
+                        <button class="project__button" id="left-button"><img src="icon/chevron-down-solid.svg" alt="left button" class="project__button_left"></button>
+                        <div class="project__content" id="theyallow">   
+                            <div class="content">               
+                                <p>theyallow-project</p>
+                                <ul>
+                                    <li>Pixel perfect</li>
+                                    <li>Responsive</li>
+                                    <li>Pure css</li>
+                                </ul>
+                                <p>Click on preview to open site</p>
+                            </div>  
+                            <a href="projects/theyalow/index.html"><img src="assets/theyallow.png" alt="theyallow" class="project__pic"></a>
+                        </div>
+                        <div class="project__content project-hidden" id="design-project">
+                            <div class="content">
+                                <p>repair-design-project</p>
+                                <ul>
+                                    <li>Support 375px 1440px sizes</li>
+                                    <li>Responsive</li>
+                                    <li>SASS preprocessor</li>
+                                </ul>
+                                <p>Click on preview to open site</p>
+                            </div>
+                            <a href="projects/repair-design-project/index.html"><img src="assets/repair-design-project.png" alt="repair-design-project" class="project__pic"></a>
+                        </div>
+                        <button class="project__button"><img src="icon/chevron-down-solid.svg" alt="right button" id="right-button" class="project__button_right" ></button>
+                    </div>
+                </article>
+        </main>
+    </body>
+</html>
